@@ -1,0 +1,19 @@
+<h1>Hola New!</h1>
+
+<form method="post" action="/project" id="create_project">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    Nombre<input name="nombre">
+    Descripción<input name="descripcion">
+    Fecha Comienzo<input type="date" name="fec_comienzo">
+    Fecha Termino<input type="date" name="fec_termino">
+    Estado<select  name="estado">
+        <option value="Seleccione">Seleccione</option>    
+        <option value="Propuesta">Propuesta</option>
+        <option value="En Progreso">En Progreso</option>
+        <option value="Terminado">Terminado</option>
+    </select>
+    
+    <input type="submit" value="Enviar">
+</form>   
+
+
